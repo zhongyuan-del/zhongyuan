@@ -1,0 +1,139 @@
+  @charset "utf-8";
+  
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 导航栏 */
+        ul {
+            list-style-type: none;
+            margin: 0 0 10px 0;       /* 导航栏上右下左的边距属性 */
+            padding: 0;
+            overflow: hidden;
+            border: 2px solid #cfab3f;
+            background-color: #d4bb6f;
+        }
+        li {
+            float: left;   /* 向左浮动 */
+        }
+        
+        li a {
+            display: block;     /* 块元素 */
+            color: white;
+            text-align: center;
+            padding: 15px 30px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #9d8216;
+        }
+
+        .title {
+            text-align: center;
+            color: #0c0c0c;
+            padding: 20px;
+            font-size: 30px;
+            border: 15px solid #f5e6b9; /* 设置10px宽的实线边框 */
+            border-radius: 5px;           /*设置圆角的边框*/
+            margin: 50px 250px 0 250px;
+        }
+
+        .picture1{
+            margin: 10px 50px 0 250px;
+            padding: 0;
+            width: 500px;
+            height: 1050px;
+            float: left;
+   
+        }
+
+        /*文本样式*/
+        p{
+            margin: 0 250px 0 0;
+            text-indent:40px;     /*首行缩进*/
+            font-size: large;
+            line-height: 150%;
+        }
+
+        .picture2{
+            margin: 70px 250px 0 10px;
+            float: right;
+            width: 200px;
+            height: 200px;
+            
+        }
+
+        .picture3{
+            margin: 30px 250px 30px 250px;
+            width: 1400px;
+            height: 180px;
+        }
+
+        .layer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+         /* 实现卡片在中间布局 */
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .card{
+            background-color: rgb(248, 242, 221);
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            height: 500px;
+            width: 350px;
+            padding: 20px;
+            margin: 20px 50px 0 50px;
+
+            
+        }
+
+        .card h3{
+            text-align: center;
+        }
+
+        .picture4{
+            margin: 30px 0px 30px 70px;
+            width: 200px;
+            height: 180px;
+        }
+
+        /* 使单元格在页面居中 */
+        .center{
+            display: flex;
+               justify-content: center;
+        }
+
+        /* 单元格样式 */
+        table {
+            border-collapse:collapse;
+            
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid #cfab3f;
+            padding: 10px;
+            margin: 50px;
+        }
+        
+
+
+        /*底框样式*/
+        .footer{
+                background-color:#e9cc77;
+                padding: 50px;
+                margin: 50px 250px 0 250px;
+            
+        }
+
+

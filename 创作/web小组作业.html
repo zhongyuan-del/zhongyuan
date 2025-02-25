@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web小组作业</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* CSS样式段落 */
+        .nav-bg {
+            /* 定义导航栏背景 */
+            display: flex;
+            /* width: 1920px; */
+            /* 设置宽度为1300像素 */
+            height: 50px;
+            /* 设置高度为50像素 */
+            background-color: #d4af0a;
+            /* 背景色为深黄色 */
+            font-size: 24px;
+            /* 字体大小为24像素 */
+            align-items: center;
+        }
+
+        .nav-links {
+
+            position: absolute;
+
+            left: 50%;
+
+            transform: translate(-50%);
+        }
+
+        .nav-links a {
+            /* 导航链接样式 */
+            display: inline-block;
+            /* 水平居中显示 */
+            width: 100px;
+            /* 单个链接宽度为100像素 */
+            height: 50px;
+            /* 链接高度 */
+            text-align: center;
+            /* 文本居中 */
+            line-height: 60px;
+            /* 行高等于链接高度 */
+            color: white;
+            /* 文字颜色为白色 */
+            transition: background-color 0.3s ease;
+            /* 添加背景色过渡效果 */
+        }
+
+        .nav-links a:hover {
+            /* 鼠标悬停时链接状态 */
+            background-color: orange;
+            /* 背景色变为橙色 */
+        }
+
+        .all {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+        .content_area {
+            /* 内容区域 */
+            width: 1300px;
+            /* 宽度保持一致 */
+        }
+
+        .layer {
+            /* 层叠元素布局 */
+            display: flex;
+            /* 显示为弹性盒模型 */
+            justify-content: space-between;
+            /* 子元素水平均匀分布 */
+        }
+
+        .card {
+            /* 卡片组件 */
+
+            width: 380px;
+            /* 卡片宽度 */
+            height: 500px;
+            /* 卡片高度 */
+            margin: 30px;
+            /* 边距为30px */
+            padding: 30px;
+            /* 内边距为30px */
+            background-color: white;
+            /* 背景色为白色 */
+            border: 1px solid gray;
+            /* 边框1像素灰色 */
+            border-radius: 10px;
+            /* 圆角半径为10像素 */
+        }
+
+        .card_image {
+            /* 卡片内的图片 */
+            width: 100%;
+            /* 自适应宽度 */
+            height: 250px;
+            /* 高度为250像素 */
+            border-radius: 10px;
+            /* 图片圆角 */
+        }
+
+        .main-container {
+            /* 主内容容器 */
+            width: 1300px;
+            /* 宽度 */
+            height: 300px;
+            /* 高度 */
+            background: url("./img/d9686af1ec0bb12e5a709d735df5070.png") no-repeat center center;
+            /* 设置背景图片 */
+            position: relative;
+            /* 设置相对定位 */
+        }
+
+        .main-container.content {
+            /* 内容区域 */
+            position: absolute;
+            /* 继续绝对定位 */
+            left: 50px;
+            /* 左侧偏移50px */
+            top: 50%;
+            /* 上方距离顶部50%的位置 */
+            transform: translateY(-50%);
+            /* 使内容垂直居中 */
+        }
+
+        .footer {
+            /* 页脚 */
+            width: 1300px;
+            /* 宽度 */
+            height: 100px;
+            /* 高度 */
+            background-color: #D7719B;
+            /* 背景色 */
+            /* position: absolute; */
+            /* 绝对定位 */
+            /* bottom: -1200px; */
+            /* 位于页面底部，负值表示从页面底向上推 */
+            text-align: center;
+            /* 文本居中 */
+            color: white;
+            
+            /* 文字颜色 */
+        }
+
+        .header {
+            /* 页面头部 */
+            width: 1300px;
+            /* 同上，设置宽度 */
+            height: 700px;
+            /* 高度为700像素 */
+            margin: 0 auto;
+            /* 居中对齐 */
+            background: url("./img/1729138923835.png") center center no-repeat;
+            /* 设置背景图片 */
+            background-size: 100% 100%;
+            /* 图片缩放填充容器 */
+            margin-bottom: 30px;
+            /* 底部留出30px空间 */
+            position: relative;
+            display: flex;
+        }
+
+        .aaaimg {
+            background: url('./img/111.jpg') center center no-repeat;
+            background-size: 100% 100%;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+        }
+
+        .zuzhangname {
+            width: 100px;
+            height: 30px;
+            position: absolute;
+            top: 55%;
+            left: 26%;
+            text-decoration: none;
+            color: black;
+        }
+
+        .zuzhangname:hover {
+            color: blue;
+        }
+
+        /* CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .slider {
+            /* position: relative; */
+            width: 15%;
+            margin: auto;
+            max-width: 600px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            left: 69%;
+            position: absolute;
+            top: 50%;
+        }
+
+        .slides-container {
+            display: flex;
+            transition: transform 0.5s ease;
+
+        }
+
+        .slide {
+            flex-shrink: 0;
+            width: 100%;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 1;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 2em;
+        }
+
+        .arrow.prev {
+            left: 10px;
+        }
+
+        .arrow.next {
+            right: 10px;
+        }
+
+        .search {
+            /* padding: 50px 0; */
+            display: flex;
+            position: relative;
+            margin: 30px auto;
+            width: 600px;
+            height: 130px;
+        }
+
+        .form {
+            position: relative;
+            width: 400px;
+            margin: 0 auto;
+            /*设置宽度后，居中*/
+        }
+
+        .input,
+        button {
+            border: none;
+            /*无边框样式；元素的总宽度和高度包括边框的宽度 */
+            outline: none;
+            /*无轮廓样式；轮廓是在元素周围绘制的一条线，在边框之外并且可能与其他内容重叠，以凸显元素，元素的总宽度和高度不受轮廓线宽度的影响。*/
+        }
+
+        .search input {
+            width: 100%;
+            height: 42px;
+            padding-left: 13px;
+            border: 2px solid black;
+            border-radius: 19px;
+            /*border-radius 属性用于向元素添加圆角边框：*/
+            background: transparent;
+            /*背景透明*/
+        }
+
+        /* .search input {
+            border: 2px solid blanchedalmond;
+        } */
+        .search button {
+            height: 42px;
+            width: 42px;
+            cursor: pointer;
+            /*cursor属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状*/
+            position: absolute;
+            background: black;
+            border-radius: 0 19px 19px 0;
+            width: 60px;
+            color: white;
+            right: 0;
+            height: 45px;
+        }
+
+        .search button:hover {
+            
+            /*点击搜索按钮时的背景颜色*/
+        }
+
+        .search button:active {
+            background-color: cornsilk;
+        }
+
+        /* 在<button>元素后面插入内容，并设置所插入内容的样式： */
+        
+
+        input[name="keyword"]:hover,
+        input[name="keyword"]:active {
+            border: 1px solid black;
+            /* 或者设置为你想要的颜色，例如  */
+        }
+    </style>
+    <!-- HTML结构示例 -->
+</head>
+
+<body>
+    <div class="nav-bg"> <!-- 背景颜色区域 -->
+        <div class="nav-links"> <!-- 链接容器 -->
+            <a href="tangshi.html" target="_blank">唐诗</a> <!-- 首页链接，显示唐诗 -->
+            <a href="宋词.html" target="_blank">宋词</a> <!-- 显示宋词链接 -->
+            <a href="yuanqu.html" target="_blank">元曲</a> <!-- 显示元曲链接 -->
+            <a href="页面.html" target="_blank">my zone</a> <!--   显示注册页面 -->
+        </div>
+    </div>
+    <!-- 导航栏区域 -->
+    <div class="all">
+        <!-- 顶部头部区域 -->
+        <div class="header">
+            <div class="aaaimg"></div>
+            <a class="zuzhangname" target="_blank" href="./钟原诗词鉴赏.html">钟原</a>
+            <div class="search">
+
+                <input placeholder="请输入关键词" name="keyword" type="text">
+                <button type="submit">搜索</button>
+            </div>
+        </div>
+
+        <body>
+
+            <div class="slider">
+                <div class="arrow prev">&#10094;</div>
+                <div class="arrow next">&#10095;</div>
+                <div class="slides-container">
+                    <div class="slide"><img src="./img/022485c5a5ad2407e213129f71dfa2e.jPg" alt="Image 2"></div>
+                    <div class="slide"><img src="./img/42d5acf218850024f24688d490f2500.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="./img/c27fff03bda06f54b35ae84cc48483d.jpg" alt="Image 3"></div>
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+
+            <script>
+                const slider = document.querySelector('.slider');
+                const slidesContainer = slider.querySelector('.slides-container');
+                const slides = Array.from(slider.querySelectorAll('.slide'));
+                const arrows = Array.from(slider.querySelectorAll('.arrow'));
+
+                let currentSlide = 0;
+                const totalSlides = slides.length;
+                const slideWidth = slider.clientWidth;
+
+                function moveSlide(direction) {
+                    currentSlide = direction === 'next' ? (currentSlide + 1) % totalSlides : (currentSlide - 1 + totalSlides) % totalSlides;
+                    slidesContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
+                }
+
+                arrows.forEach((arrow, index) => {
+                    arrow.addEventListener('click', () => {
+                        moveSlide(index === 0 ? 'prev' : 'next');
+                    });
+                });
+
+                setInterval(() => {
+                    moveSlide('next');
+                }, 3000); // Auto scroll every 3 seconds
+            </script>
+
+        </body>
+
+</html>
+<!-- 内容区 -->
+<div class="content_area">
+    <!-- 层叠卡片布局 -->
+    <div class="layer">
+        <div class="card"> <!-- 卡片样式，包含图片和标题信息 -->
+            <img src="./img/R-C.jpg" alt="Image 1" class="card_image"> <!-- 图片1，alt属性提供替代文本 -->
+            <h2 class="card_title">唐诗</h2> <!-- 标题，显示唐诗内容 -->
+            <p class="card_description">
+                唐诗，泛指创作于唐朝诗人的诗，为唐代儒客文人之智慧佳作。唐诗是中华民族珍贵的文化遗产之一，是中华文化宝库中的一颗明珠，同时也对世界上许多国家的文化发展产生了很大影响，对于后人研究唐代的政治、民情、风俗、文化等都有重要的参考意义。
+            </p>
+        </div>
+        <div class="card">
+            <img src="./img/R-C (1).jpg" alt="Image 2" class="card_image">
+            <h2 class="card_title">宋词</h2>
+            <p class="card_description">宋代盛行的一种中国文学体裁，宋词是一种相对于古体诗的新体诗歌，为宋代儒客文人智慧精华，标志宋代文学的最高成就。</p>
+        </div>
+        <div class="card" id="card-yuanqu">
+            <img src="./img/df4c1810884f43d497fb252f6937da65.jpeg" alt="Image 3" class="card_image">
+            <h2 class="card_title">元曲</h2>
+            <p class="card_description">元曲是盛行于元代的一种文艺形式，为元代儒客文人智慧精髓，包括杂剧和散曲，有时专指杂剧。</p>
+        </div>
+    </div>
+    <div class="layer">
+
+    </div>
+</div>
+<div class="main-container">
+    <div class="content">
+        <p>作者的话：</p>
+        <p>古诗词是中华民族宝贵的文化结晶，它可修身养性，可陶冶情操，亦能给予我们生活上的启示。而我们这一代人，具有对中国优秀传统文化继往开来的时代重任，我希望每一个青年学生都可以在闲暇之余读读诗，写写词，跨越时代与古人共情。
+            当然读诗词最基本的现实意义也在于，当我们看到傍晚漫天霞光时，可以感叹“落日楼头，断鸿声里，江南游子”，“落霞与孤鹜齐飞，秋水共长天一色”而不是脱口而出一句“卧槽，夕阳好美”。</p>
+    </div>
+</div>
+<!-- 底部版权信息 -->
+<div class="footer">
+    <p>版权等信息（由钟原小组完成，小组成员名单：钟原，孔珊，文俊宇，顾嘉鑫，黄钿荃，赵宇立，王钰涛）</p>
+</div>
+</div>
+</body>
+
+</html>==

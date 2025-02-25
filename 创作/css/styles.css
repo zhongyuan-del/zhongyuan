@@ -1,0 +1,48 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8f3;
+}
+
+header {
+    background-color: #807f4c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#poetry-content {
+    margin-bottom: 20px;
+}
+
+#comment-form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#comment-input {
+    flex: 1;
+    padding: 5px;
+}
+
+#submit-comment {
+    padding: 5px 10px;
+}
+
+#comment-list {
+    list-style-type: none;
+    padding: 0;
+}

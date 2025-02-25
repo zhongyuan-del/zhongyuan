@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+         ul {
+            list-style-type: none;
+            margin: 0 0 10px 0;       /* 导航栏上右下左的边距属性 */
+            padding: 0;
+            overflow: hidden;
+            border: 2px solid #cfab3f;
+            background-color: #d4bb6f;
+        }
+        li {
+            float: left;   /* 向左浮动 */
+        }
+        
+        li a {
+            display: block;     /* 块元素 */
+            color: white;
+            text-align: center;
+            padding: 15px 30px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #9d8216;
+        }
+
+
+        /* 页面的基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(248,242,221);
+        }
+
+        /* 标题样式 */
+        h1 {
+            text-align: center;
+            color: #0c0c0c;
+            padding: 20px;
+            border: 15px solid #f5e6b9; /* 设置10px宽的实线边框 */
+            border-radius: 5px;           /*设置圆角的边框*/
+            margin: 50px 250px 0 250px;
+        }
+
+        /* 作者块样式 */
+       .author-container {
+            background-color: #f5e6b9;
+            border-radius: 5px;
+            
+            margin: 20px 250px 20px 250px;
+            padding: 20px;
+        }
+
+        /* 作者姓名样式 */
+       .author-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #171718;
+        }
+
+        /* 作者简介样式 */
+       .author-intro {
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        /* 代表作列表样式 */
+       .works-list {
+            margin-top: 10px;
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        /* 代表作列表项样式 */
+       .works-list li {
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            background-color: #e9cc77;
+            text-align: center;
+            padding: 50px;
+            margin: 50px 250px 0 250px;
+        }
+        /*诗人图片样式*/
+        img{
+            margin: 10px 30px 10px 0;
+            padding: 0;
+            width: 180px;
+            height: 180px;
+            float: right;
+        }
+    </style>
+<body>
+
+    <ul>
+        <li><a class="active" href="./tangshi.html">主页</a></li>
+        <li><a href="./poem.html">诗文</a></li>
+        <li><a href="./author.html">作者</a></li>
+      </ul>
+
+    <h1>唐诗著名作者</h1>
+    <div class="author-container">
+        <img src="./img/OIP-C.jpg" alt="">
+        <p class="author-name">李白</p>
+        <p class="author-intro">字太白，号青莲居士，又号“谪仙人”，是唐代伟大的浪漫主义诗人，被后人誉为“诗仙”，其诗作风格豪放飘逸、意境奇妙。</p>
+        <div class="works-list">
+            <div>《将进酒》</div>
+            <div>《静夜思》</div>
+            <div>《蜀道难》</div>
+        </div>
+    </div>
+    
+    <div class="author-container">
+        <img src="./img/OIP-C (1).jpg" alt="">
+        <p class="author-name">杜甫</p>
+        <p class="author-intro">字子美，自号少陵野老，唐代伟大的现实主义诗人，与李白合称“李杜”。其诗作反映了当时社会的诸多问题，风格沉郁顿挫。</p>
+        <div class="works-list">
+            <div>《登高》</div>
+            <div>《春望》</div>
+            <div>《茅屋为秋风所破歌》</div>
+        </div>
+        
+    </div>
+    
+    <div class="author-container">
+        <img src="./img/198370101828619.jpg" alt="">
+        <p class="author-name">王维</p>
+        <p class="author-intro">字摩诘，号摩诘居士，唐朝著名诗人、画家，有“诗佛”之称。其诗多咏山水田园，意境空灵，充满禅意。</p>
+        <div class="works-list">
+            <div>《山居秋暝》</div>
+            <div>《使至塞上》</div>
+            <ldiv>《鸟鸣涧》</div>
+            </div>
+    </div>
+    <div class="footer"></div>
+
+    
+</body>
+</html>

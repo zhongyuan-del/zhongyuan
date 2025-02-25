@@ -1,0 +1,164 @@
+header , section {
+    background-color: burlywood;/* 设置背景颜色为burlywood */
+    border: 5px solid rgba(21, 5, 48, 0.067);/* 设置边框样式，这里边框宽度为5px，颜色使用rgba表示*/
+    padding: 30px 50px;/* 设置内边距，上下内边距为30px，左右内边距为50px，使元素内部内容与边框有一定间距 */
+    margin:30px; /* 设置外边距为30px，用于控制元素与周围元素的间隔距离 */
+}
+
+.shop {
+    display: flex;/* 设置为flex布局，方便对其内部子元素进行灵活的排列布局 */
+    background-color: #ede9db;
+}
+.shop img {
+    width: 50%;/* 设置图片宽度占父元素宽度的50%，用于控制图片在布局中的尺寸占比 */
+}
+.info {
+    width: 50%; /* 设置宽度占父元素的50%，与同层级的图片元素共同分配父元素的宽度 */
+    background-color:white;
+    display: flex; /* 设置为flex布局，方便对其内部子元素进行排列布局 */
+    flex-direction: column;/* 设置flex布局的主轴方向为垂直方向，也就是内部子元素将按列排列 */
+    align-items: center;/* 使内部子元素在交叉轴（垂直于主轴的轴）上居中对齐 */
+    justify-content: center;/* 使内部子元素在主轴（这里是垂直方向）上居中分布 */
+}
+.info h2 {
+    font-size: 40px;
+    margin-bottom: 30px;/* 设置底部外边距为30px，用于控制标题与下方元素的间隔距离 */
+}
+.info p {
+    text-align: center; /* 设置段落文字水平居中对齐 */
+    line-height: 2em;/* 设置行高为字体大小的2倍，使段落文字行间距更合适，看起来更清晰易读 */
+    font-size: 30px;
+}
+
+
+.diwei {
+    display: flex;/* 设置为flex布局，方便对其内部子元素进行灵活的排列布局 */
+    background-color: #ede9db;
+}
+.diwei img {
+    width: 50%;
+}
+.iec {
+    width: 50%;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.iec h4 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.iec p {
+    text-align: center;
+    line-height: 2em;
+    font-size: 30px;
+}
+
+
+
+.four {
+    display: flex;
+    background-color: #ede9db;
+}
+.four img {
+    width: 50%;
+}
+.jia {
+    width: 50%;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.jia p {
+    text-align: center;
+    line-height: 2em;
+    font-size: 30px;
+}
+
+
+.i1 {
+    /* display: flex; */
+    /* width: 100%; */
+    background-color:white;
+    padding: 100px 180px 80px;
+}
+/* .i1 div {
+    width: 300px; 
+    text-align: center; 
+} */
+.i1 img {
+    width: 50%; 
+    border-radius: 10px;; /* 给图片设置10px的圆角，使图片的四个角看起来更圆润，更具美观性 */
+}
+.i2{
+    width: 50%;/* 设置元素的宽度为其父元素宽度的50% */
+    background-color:#ede9db;
+    display: flex;/* 将元素设置为弹性盒子布局，使得内部子元素可以方便地进行灵活排列 */
+    flex-direction: column;/* 规定弹性盒子内部元素按列方向排列，也就是垂直方向排列 */
+    align-items: center;  /* 让弹性盒子内部的子元素在水平方向上居中对齐 */
+    justify-content: center;/* 让弹性盒子内部的子元素在垂直方向上居中对齐 */
+}
+.i1 h5 {
+    font-size: 20px; /* 设置字体大小为20像素，用于控制文本显示的大小 */
+    width: 25px;/* 设置元素的宽度为25像素，决定该元素在水平方向占据的空间大小 */
+    margin-left: 8px;/* 设置元素左侧的外边距为8像素，用于控制与相邻元素在水平方向左侧的间隔距离 */
+    margin-right: 8px; /* 设置元素右侧的外边距为8像素，用于控制与相邻元素在水平方向右侧的间隔距离 */
+    padding-top: 8px;/* 设置元素顶部的内边距为8像素，用于在元素内部的顶部增加一定的空白空间 */
+}
+.partone {
+    display: flex;
+}
+.i2 p {
+    width: fit-content;
+    text-indent: 2em; /* 设置段落首行缩进2个字符宽度*/
+    line-height: 25px; /*设置行与行之间的垂直间距为25像素 */
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 7px;
+}
+
+
+
+
+.product {
+    background-color:white;
+    padding: 100px 180px 80px;
+}
+/* .product div {
+    width: 300px; 
+    text-align: center; 
+} */
+.product img {
+    width: 50%; 
+    border-radius: 10px;; /* 给图片设置10px的圆角，使图片的四个角看起来更圆润，更具美观性 */
+}
+.i3 {
+    width: 50%;
+    background-color:#ede9db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product h3 {
+    font-size: 20px;
+    width: 25px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 8px;
+}
+.parttwo {
+    display: flex;
+}
+.product p {
+    width: fit-content;
+    text-indent: 2em;
+    line-height: 25px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 7px;
+}

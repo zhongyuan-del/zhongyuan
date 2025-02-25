@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单_基本结构</title>
+</head>
+<body>
+    <!--    action:规定向何处提交表单的地址（URL）（提交页面
+            input:输入框  type属性：控制输入框的类型 name：（提交）数据的名字，写的时候要见名知意（需要与后端人员沟通）
+            button：按钮 -->
+     
+    <form action="https://www.baidu.com/s"> 
+        <input type="text" name="wd">
+        <button>去百度搜索</button>
+    </form>
+    <hr>
+    <!-- target规定 action 属性中地址的目标（默认：_self） -->
+    <form action="https://search.jd.com/search" target="_self" method="">
+        <input type="text" name="keyword">
+        <button>去京东搜索</button>
+        
+    </form>
+    <hr>
+</body>
+</html>

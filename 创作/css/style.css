@@ -1,0 +1,136 @@
+*{
+    padding: 0;    /* 清除body元素默认的外边距 */
+    margin: 0;     /* 清除body元素默认的内边距 */
+}
+
+
+body {
+    font-family: Arial, sans-serif;  /*  设置网页主体文本的字体为Arial或无衬线字体 */
+    background-color: burlywood  /* 设置网页背景颜色 */
+    padding: 0;    /* 清除body元素默认的外边距 */
+    margin: 0;     /* 清除body元素默认的内边距 */
+}
+
+header {
+    background-color:  darkgoldenrod ; /* 设置header元素的背景颜色 */
+    color: #f4f4f4;  /* 设置header内文本颜色为白色 */
+    padding: 20px; /*  给header元素设置内边距为20像素，增加内容与边框的间隔 */
+    text-align: center;
+}
+section{
+    background-color: burlywood;
+}
+
+.a{
+    height: 300px;
+    display: flex;/* 设置为flex布局，方便对其内部子元素进行灵活的排列布局 */
+    padding:30px;
+}
+.a p{
+  font-size: 25px;
+  line-height: 2em;/* 设置行高为字体大小的2倍，使段落文字行间距更合适，看起来更清晰易读 */
+  padding: 20px 20px;
+  background-color: #f4f4f4;
+}
+.aa{
+    text-align: center;  /* 使body内文本居中对齐 */
+    background-color: goldenrod;
+}
+.b{
+    padding: 30px;
+}
+.b p{
+    outline-style: solid;
+    background-color: #f4f4f4;
+    line-height: 2em;
+    font-size: 25px;
+}
+.bb{
+    padding: 30px;
+}
+.bb  p{
+    outline-style: solid;
+    background-color: #f4f4f4;
+    line-height: 2em;
+    font-size: 25px;
+}
+.c{
+    text-align: center;  /* 使body内文本居中对齐 */
+    background-color: goldenrod;
+}
+.cc{
+    display: flex;
+    padding: 30px;
+}
+.ac,img{
+    outline-style: solid;
+    background-color: #f4f4f4;
+    line-height: 2em;
+    font-size: 25px;
+}
+.ccc{
+    display: flex;
+    padding: 30px;
+}
+.bc,img{
+    outline-style: solid;
+    background-color: #f4f4f4;
+    line-height: 2em;
+    font-size: 25px;
+}
+.d{
+    text-align: center;  /* 使body内文本居中对齐 */
+    background-color: goldenrod;
+}
+.dd{
+    display: flex;
+    padding: 30px   400px  30px;
+    text-align: center;
+}
+.ad{
+    outline-style: solid;
+    background-color: #f4f4f4;
+    line-height: 2em;
+    font-size: 25px;
+  
+}
+.f{
+    text-align: center;  /* 使body内文本居中对齐 */
+    background-color: goldenrod;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;  /* 设置类名为container的元素最大宽度为600像素，用于限制内容宽度 */
+    margin: 20px auto; /* 设置上下外边距为20像素，左右自动居中，使该元素在页面中水平居中 */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);  /* 给该元素添加一个淡淡的阴影效果，增加立体感 */
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;  /* 设置按钮距离上方元素的外边距为10像素 */
+    cursor: pointer;   /* 鼠标悬停在按钮上时显示指针样式，表示可点击 */
+}
+
+button:hover {
+    background-color: #555; /* 当鼠标悬停在按钮上时，改变按钮背景颜色为稍深一点的灰色 */
+}
+
+.result {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold; /* 设置文本加粗显示 */
+    display: none;   /* 初始时隐藏该元素，提交答案后再显 */
+}
